@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Category, Post
 
-class CategoryAdmin(admin.model.Admin):
+class CategoryAdmin(admin.ModelAdmin):
     readonly_fields=('created', 'update')
 
 
