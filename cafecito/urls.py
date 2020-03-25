@@ -15,13 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from core import views
+
 from django.conf import settings
 
 
 urlpatterns = [
     path('',include('core.urls')),
     path('admin/', admin.site.urls),
+    path('blog/',include('blog.urls')),
+    path('sevices/',include('services.urls')),
 ]
 #aca mapeamos archivos estaticos si estamos debbugeando
 if settings.DEBUG:
