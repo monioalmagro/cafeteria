@@ -1,11 +1,7 @@
-
 from django.urls import path
-
-from django.conf import settings
 from . import views
 
-
 urlpatterns = [
-    path('',views.blog,name="blog"),
-    
+    path('', views.blog, name="blog"),
+    path('categories/<int:category_id>/', views.categories, name="categories"),
 ]
