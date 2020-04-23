@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Service
-#from .consulta import return_data_from_database
+from .consulta import return_data_from_database
 
 def services(request):
     # ORM
