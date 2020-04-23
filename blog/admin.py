@@ -16,5 +16,5 @@ class PostAdmin(admin.ModelAdmin):
         return ", ".join([c.name for c in obj.categories.all().order_by("name")])
     post_categories.short_description = "Categorias"
 
-admin.site.register(Category,CategoryAdmin)
-admin.site.register(Post, PostAdmin)
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(Post, PostAdmin) 
