@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'media',
     'services.apps.ServicesConfig',
     'blog.apps.BlogConfig',
-    'contact.apps.ContactConfig',
+    #'contact.apps.ContactConfig',
     'social.apps.SocialConfig',
     'pages.apps.PagesConfig',
 ]
