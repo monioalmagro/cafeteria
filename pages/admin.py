@@ -1,3 +1,6 @@
-from django.contrib import admin
+from django.contrib.admin import register, ModelAdmin
+from .models import Page
 
-# Register your models here.
+@register(Page)
+class PageAdmin(ModelAdmin):
+    readonly_fields = ('created', 'updated')
