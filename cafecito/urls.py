@@ -9,6 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/',include('blog.urls')),
     path('sevices/',include('services.urls')),
+    path('page/', include('pages.urls')),
 ]
 #aca mapeamos archivos estaticos si estamos debbugeando
 if settings.DEBUG:
