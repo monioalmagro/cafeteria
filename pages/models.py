@@ -5,7 +5,7 @@ from ckeditor.fields import RichTextField
 
 class Page(Model):
     title = CharField(verbose_name="Título", max_length=200)
-    content = RichTextField(verbose_name='Contenido') # cambio 23-4
+    content = RichTextField(verbose_name='Contenido')
     ordering = SmallIntegerField(verbose_name='Orden', default=0)
     created = DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated = DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
