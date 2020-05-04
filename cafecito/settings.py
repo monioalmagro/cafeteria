@@ -25,7 +25,7 @@ SECRET_KEY = '28mup1k_w1czdk#s)_9rg+^fzap9v+6m(tq$*h%vpg3zc!)vq2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,13 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
+    'ckeditor',
     'core',
-    'ckeditor', 
-    'media',
-    'services.apps.ServicesConfig',
-    'blog.apps.BlogConfig',
-    'social.apps.SocialConfig',
     'pages.apps.PagesConfig',
+    'services.apps.ServicesConfig',
+    'social.apps.SocialConfig',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +53,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
 ]
 
 ROOT_URLCONF = 'cafecito.urls'
@@ -62,7 +60,7 @@ ROOT_URLCONF = 'cafecito.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        #Aca le decimos a Django que busque en nuestra carpeta 
+        #Aca le decimos a Django que busque en nuestra carpeta
         'DIRS': [os.path.join(BASE_DIR, 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -70,8 +68,8 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages'
-                'social.processor.contexto_propio', 
+                'django.contrib.messages.context_processors.messages',
+                'social.processor.contexto_propio',
             ],
         },
     },
