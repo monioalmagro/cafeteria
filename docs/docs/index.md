@@ -1,22 +1,32 @@
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
 
 # Creamos la APP contact
+
+
+- python manage.py startapp contact
+___
+- creamos el archivo urls.py dentro de la app contact
+- y creamos la vista en local la vista contact
+___
+
+- agregamos  la vista en urls global
+___
+
+- Dentro de la plicaccion creamos la carpeta templates y dentro de la misma la carpeta contact, posteriormente creamos la template contact.html
+___
+
+-  en views.py importamos y creamos la vista
+___
+- agregamos la spp al settings.py
+___
+- Creamos el archivo forms.py
+___
+
+- Eliminamos de core/views.py y core/urls.py y core/templates/core/contact.html
+
+___
+
+
+
 
 
 
